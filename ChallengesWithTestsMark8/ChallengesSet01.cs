@@ -45,14 +45,35 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            nameOfPerson = Console.ReadLine();
-            return "Hello, " + nameOfPerson + "!";
+            string name = nameOfPerson;
+            //nameOfPerson = Console.ReadLine();
+            //return "Hello, " + nameOfPerson + "!";
+
+            //var name = nameOfPerson;
+
+           
+                if (nameOfPerson == "")
+                {
+                return "Hello!";
+
+                }
+
+            else
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
             
+                
+           
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            
+            string GetHey = Console.ReadLine();
+            // = Console.ReadLine();
+            return "HEY!";
+            //return "HEY!, " + GetHey + "!";
         }
     }
 }
